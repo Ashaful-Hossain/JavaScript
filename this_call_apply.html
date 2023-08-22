@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This=call()_Apply()</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+    const person = {
+        fName : "Habib",
+        lName : "Ahmed"
+    };
+
+    const data ={
+      fullName : function(){
+        return this.fName+" "+this.lName;
+    }
+    };
+    console.log(data.fullName.call(person));
+</script>
+</html>

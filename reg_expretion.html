@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reguller Expration</title>
+</head>
+<body>
+
+</body>
+
+<script>
+    const data = "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt minus rem tempore accusantium earum eum magni ipsa dolor laboriosam explicabo velit hic aliquid ipsam incidunt corporis consequuntur necessitatibus quis asperiores, quo voluptas. Officiis quam illo rerum doloremque excepturi soluta maxime consequatur dolor dolor? Distinctio consectetur temporibus nobis, cum dolor numquam.";
+
+    let matches = data.match(/dolor/gi);
+    // console.log(matches);
+    check = matches ? matches.length : "Do not match";
+    console.log(check);
+
+
+    let searches = data.search(/ipsams/i);
+        searches = searches >= 0 ? searches.length : "not found";
+    console.log(searches);
+</script>
+</html>

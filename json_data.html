@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Data</title>
+</head>
+<body>
+    <p id="demo"></p>
+</body>
+
+<script>
+
+    // JSON Data to Object ::
+    let data='{"employies":['+
+        '{"name":"habib","age":35},'+
+        '{"name":"Mamun","age":37},'+
+        '{"name":"Jalil","age":34}]}';
+
+    let obj = JSON.parse(data);
+    // console.log(obj);
+
+    document.getElementById("demo").innerHTML=data;
+
+    // Object to JSON Data ::
+
+    let person = {
+        name:"amin",
+        age:38,
+        job:"Driver"
+    };
+
+    let newData = JSON.stringify(person);
+    console.log(newData);
+
+
+</script>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <button onclick="myFun()">Click</button>
+    <p id="data">Hello world</p>
+</body>
+
+<script>
+    function fName(a,b){
+        // console.log("My Name is Khan");
+        return (a*b);
+    }
+   let x = fName(5,4);
+    console.log(x);
+
+    function myFun(){
+        let m = document.getElementById("data").innerHTML;
+       console.log(document.getElementById("data").innerHTML= m.toUpperCase());
+    }
+</script>
+</html>

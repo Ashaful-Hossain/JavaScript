@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Try_Catch_throw_Finally</title>
+</head>
+<body>
+    
+</body>
+<h1>JS Errors</h1>
+<h2>Try Catch Throw Finally</h2>
+<button onclick="">click</button>
+<p id="model"></p>
+<script>
+    let x = "";
+    function erro(){}
+    try{
+        if(x=="")throw " should not empty";
+        if(isNaN(x))throw " not a Number";
+        x=Number(x);
+        if(x<5)throw "Too few";
+        if(x>10)throw "Too high";
+
+    }
+    catch(kawa){
+        console.log("Its "+kawa);
+    }
+
+    console.log("JS Errors  Testing");
+</script>
+</html>
